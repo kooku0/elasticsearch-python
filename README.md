@@ -48,15 +48,13 @@ es.indices.get(index = 'test01', ignore=[400, 404])
 
 **ignore 붙혀줄 시 출력값**
 
-<img src="D:/Project/elasticsearch-python/img/ignore.jpg"/>
+<img src="./img/ignore.jpg"/>
 
 #### id 내용 가지고오기
 
 ```python
 es.get(index='test01', doc_type='doc', id='_id')
 ```
-
-
 
 #### 모든 index 출력
 
