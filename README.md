@@ -21,7 +21,7 @@ es = elasticsearch.Elasticsearch("localhost:9200")
 es.indices.create(index='test01', ignore=400)
 ```
 
-기존에 있는 index라면 400에러가 발생한다. Try/Catch를 사용하면 되겠지만 사용하기 싫다면 ignore=400을 적어주면 해당 해당에러의 원인을 return해준다.
+기존에 있는 index라면 400에러가 발생한다. Try/Catch를 사용하면 되겠지만 사용하기 싫다면 ignore=400을 적어주어라. 해당 에러의 원인을 return해줄 것이다.
 
 #### id 생성
 
@@ -44,9 +44,9 @@ es.indices.delete(index='test-index', ignore=[400, 404])
 es.indices.get(index = 'test01', ignore=[400, 404])
 ```
 
-없는 index라면 404에러가 발생한다. Try/Catch를 사용하면 되겠지만 사용하기 싫다면 ignore=404를 적어주면 해당 해당에러의 원인을 return해준다.
+없는 index라면 404에러가 발생한다. Try/Catch를 사용하면 되겠지만 사용하기 싫다면 ignore=404를 적어주어라. 해당 에러의 원인을 return해줄것이다.
 
-**ignore 붙혀줄 시 출력값**
+**ignore 붙혀줄 시 404에러 출력값**
 
 <img src="./img/ignore.jpg"/>
 
