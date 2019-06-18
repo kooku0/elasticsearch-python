@@ -74,7 +74,7 @@ es.indices.exists(index='test03')
 #### id 문서 존재여부
 
 ```python
-es.exist(index = 'test01', doc_type = 'text', id = 1)
+es.exists(index = 'test01', doc_type = 'text', id = 1)
 ```
 
 #### elastic 설정 정보
